@@ -1,50 +1,64 @@
-# Welcome to your Expo app 👋
+# Product Listing App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple React Native application that allows users to view a list of products and see their details on a separate screen.
 
-## Get started
+## Features
 
-1. Install dependencies
+- View a list of products with images and details
+- Smart search functionality:
+  - Search products by name or category
+  - Shows "No products found" message with search term when no results
+  - Clear search with one tap
+- Shopping cart features:
+  - Add products to cart (only if not already added)
+  - View cart items count badge
+  - Toast notifications for cart actions
+- Product details:
+  - View full product information
+  - Image gallery with zoom
+  - Add to cart with quantity selection
+- Toast notifications:
+  - Success messages for cart actions
+  - Error messages for failed operations
+  - Network status updates
 
-   ```bash
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/product-listing-app.git
+   cd product-listing-app
+   ```
+
+2. Install dependencies:
+   ```
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Start the app:
+   ```
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your preferred platform:
+   - Press `a` for Android
+   - Press `i` for iOS
+   - Press `w` for web
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technologies Used
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native
+- Expo
+- React Navigation
+- AsyncStorage for persistence
+- React Native Toast Message
+- Expo Router for navigation
+- Context API for state management  
 
-## Get a fresh project
+## Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `App.js`: Main application file with navigation and toast setup
+- `services/api.js`: API integration for products
+- `screens/HomeScreen.js`: Home screen with product list, search and cart
+- `screens/ProductDetailsScreen.js`: Product details screen with cart actions
+- `context/CartContext.js`: Cart state management
