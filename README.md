@@ -16,7 +16,7 @@ A simple React Native application that allows users to view a list of products a
 - Product details:
   - View full product information
   - Image gallery with zoom
-  - Add to cart with quantity selection
+  - Add to cart feature
 - Toast notifications:
   - Success messages for cart actions
   - Error messages for failed operations
@@ -49,7 +49,6 @@ A simple React Native application that allows users to view a list of products a
 
 - React Native
 - Expo
-- React Navigation
 - AsyncStorage for persistence
 - React Native Toast Message
 - Expo Router for navigation
